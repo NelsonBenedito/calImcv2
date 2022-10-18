@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+.box-head {
+    display: flex;
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.416);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin: 2rem;
+    margin-top: 6rem;
+    background: rgba(61, 169, 154, 0.594);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 30rem;
+    width: 40rem;
+
+}
+
+.text-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 0.1em;
+    padding-inline: 6rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-left: 2.2rem;
+    padding: 0.4rem;
+    margin-top: -0.3rem;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(1.4px);
+    backdrop-filter: blur(1.4px);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    z-index: 0;
+}
+
+.text-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    padding: 0.7rem;
+    border-radius: 0.8rem;
+    z-index: 10;
+}
+
+.button-calc {
+    border-style: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    padding-inline: 3rem;
+    border-radius: 0.7rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.button-calc:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.layout-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-inline: 7rem;
+}
+
+.paragrafo-resultado {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    padding: 0rem;
+    background-color: transparent;
+}
+
+.block-footer {
+    display: flex;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1rem;
+    border-radius: 0.7rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+.block-footer.ativo {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    transition: 0.8s;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+.img-peso{
+    display: flex;
+    background-color: transparent;
+    height: 3rem;
+    margin-right: 0.4rem;
+}
+.area-peso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.paragrafo-faixa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0%;
+
+}
+#faixaImc{
+    margin-left: 0.1rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 176, 176);
+    border-radius: 1rem;
+}

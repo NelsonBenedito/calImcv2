@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+<style>
+    .bg {
+        background-image: url(/XPE/modulo_ll/calImc/content/gym.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+
+<body class="bg">
+    <main class="main-layout">
+        <div class="box-head">
+            <p class="text-title">Calculadora de IMC</p>
+        </div>
+        <div class="layout-page">
+            <p class="area-peso">
+                <img class="img-peso" src="./content/weight.png" alt="">
+                <label class="text-input" for="input-weight"> Informe seu peso (Kg):</label>
+            </p>
+            <input class="box-input" id="input-weight" type="number" step="0.1"><br />
+            <p class="area-peso">
+                <img class="img-peso" src="./content/height.png" alt="">
+                <label class="text-input" for="input-altura">Informe sua altura (m):</label>
+            </p>
+            <input class="box-input" id="input-altura" type="number" step="0.01"><br />
+            <button class="button-calc" id="btn-calc">Calcular</button>
+        </div>
+        <div class="block-footer" id="block-result">
+            <p class="paragrafo-resultado">
+                Seu IMC é: <Strong id="resultImc"> </Strong>
+            </p>
+            <p class="paragrafo-faixa">
+                Este valor considera que você está na faixa - <Strong id="faixaImc"></Strong>
+            </p>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
