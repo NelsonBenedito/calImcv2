@@ -6,6 +6,7 @@
     border: 0px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+    background: black;
 }
 .box-head {
     display: flex;
@@ -31,7 +32,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: 30rem;
-    width: 40%;
+    width: 25rem;
 
 }
 
