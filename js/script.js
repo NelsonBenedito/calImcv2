@@ -1,5 +1,5 @@
 const errorDialog = document.querySelector("#errorDialog");
-const resultImc = document.querySelector("#resultImc");
+const valueImc = document.querySelector("#valueImc");
 const faixaImc = document.querySelector("#faixaImc");
 const btncalc = document.querySelector("#btn-calc");
 const imcResult = document.querySelector("#block-result");
@@ -44,7 +44,7 @@ function handleButtonClick() {
       faixaImc.textContent = "Muito abaixo do peso";
     }
     var formattedImc = imc.replace(".", ",");
-    resultImc.textContent = formattedImc;
+    valueImc.textContent = formattedImc;
     console.log("Peso:", weight);
     console.log("Altura:", height);
     showResult();
