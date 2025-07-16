@@ -10,7 +10,7 @@
 </head>
 <style>
     .bg {
-        background-image: url(/XPE/modulo_ll/calImc/content/gym.jpg);
+        background-image: url(/content/gym.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -20,29 +20,37 @@
 <body class="bg">
     <main class="main-layout">
         <div class="box-head">
-            <p class="text-title">Calculadora de IMC</p>
+            <p class="text-title">Calculadora IMC</p>
         </div>
-        <div class="layout-page">
-            <p class="area-peso">
-                <img class="img-peso" src="./content/weight.png" alt="">
-                <label class="text-input" for="input-weight"> Informe seu peso (Kg):</label>
-            </p>
-            <input class="box-input" id="input-weight" type="number" step="0.1"><br />
-            <p class="area-peso">
-                <img class="img-peso" src="./content/height.png" alt="">
-                <label class="text-input" for="input-altura">Informe sua altura (m):</label>
-            </p>
-            <input class="box-input" id="input-altura" type="number" step="0.01"><br />
-            <button class="button-calc" id="btn-calc">Calcular</button>
-        </div>
+
+        <form name="myForm" action="">
+            <div class="weight">
+                <p class="area-peso">
+                    <img class="img-peso" src="./content/weight.png" alt="">
+                    <label class="text-input" for="input-weight"> Informe seu peso (Kg):</label>
+                </p>
+                <input required placeholder="ex:50" class="box-input" id="input-weight" type="number" step="1">
+            </div>
+            <div class="height">
+                <p class="area-peso">
+                    <img class="img-peso" src="./content/height.png" alt="">
+                    <label class="text-input" for="input-altura">Informe sua altura (m):</label>
+                </p>
+                <input required placeholder="ex:1,00" class="box-input" id="input-height" type="number" step="1">
+            </div>
+            <button onsubmit="toggleMenu()" class="button-calc" id="btn-calc" type="submit">Calcular</button>
+        </form>
+
         <div class="block-footer" id="block-result">
             <p class="paragrafo-resultado">
-                Seu IMC é: <Strong id="resultImc"> </Strong>
+                Seu IMC: <Strong id="resultImc"> </Strong>
             </p>
             <p class="paragrafo-faixa">
-                Este valor considera que você está na faixa - <Strong id="faixaImc"></Strong>
+                Este valor considera que você está na faixa
             </p>
+            <span id="faixaImc"></span>
         </div>
+        <span id="errorDialog"></span>
     </main>
     <script src="./js/script.js"></script>
 </body>
