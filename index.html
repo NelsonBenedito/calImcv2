@@ -25,33 +25,32 @@
 
         <form name="myForm" action="">
             <div class="weight">
-                <p class="weight-input">
+                <p class="container-input">
                     <img class="icon" src="./content/weight.png" alt="">
                     <label class="text-input" for="input-weight"> Informe seu peso (Kg):</label>
                 </p>
                 <input required placeholder="ex:50" class="box-input" id="input-weight" type="number" step="1">
             </div>
             <div class="height">
-                <p class="area-peso">
+                <p class="container-input">
                     <img class="icon" src="./content/height.png" alt="">
                     <label class="text-input" for="input-altura">Informe sua altura (m):</label>
                 </p>
                 <input required placeholder="ex:1,00" class="box-input" id="input-height" type="number" step="1">
             </div>
             <button onsubmit="toggleMenu()" class="button-calc" id="btn-calc" type="submit">Calcular</button>
+            <div class="block-footer" id="blockResult">
+                <p class="result">
+                    Seu IMC: <Strong id="valueImc"> </Strong>
+                </p>
+                <p class="paragrafo-faixa">
+                    Este valor considera que você está na faixa
+                </p>
+                <span id="faixaImc"></span>
+            </div>
         </form>
-
-        <div class="block-footer" id="block-result">
-            <p class="result">
-                Seu IMC: <Strong id="valueImc"> </Strong>
-            </p>
-            <p class="paragrafo-faixa">
-                Este valor considera que você está na faixa
-            </p>
-            <span id="faixaImc"></span>
-        </div>
-        <span id="errorDialog"></span>
     </main>
+    <span id="errorDialog"></span>
     <script src="./js/script.js"></script>
 </body>
 
