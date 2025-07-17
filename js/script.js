@@ -35,15 +35,15 @@ function handleButtonClick() {
       faixaImc.className = "";
       faixaImc.textContent = "Abaixo do peso";
       faixaImc.classList.add("thinness");
-    } else if (imc >= 18.5 && imc <= 24.9) {
+    } else if (imc >= 18.5 && imc <= 24.99) {
       faixaImc.className = "";
       faixaImc.textContent = "Peso normal";
       faixaImc.classList.add("normal");
-    } else if (imc >= 25 && imc <= 29.9) {
+    } else if (imc >= 25 && imc <= 29.99) {
       faixaImc.textContent = "Acima do peso";
       faixaImc.className = "";
       faixaImc.classList.add("overweight");
-    } else if (imc >= 30 && imc <= 34.9) {
+    } else if (imc >= 30 && imc <= 34.99) {
       faixaImc.textContent = "Obesidade grau I";
       faixaImc.className = "";
       faixaImc.classList.add("obesity");
