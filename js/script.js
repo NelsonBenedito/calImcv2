@@ -11,7 +11,7 @@ function calculateImc(weight, height) {
 
 /*Ativa a div block-result ao clicar*/
 function toggleResult() {
-  imcResult.classList.toggle("ativo");
+  imcResult.classList.add("ativo");
 }
 function toggleError() {
   errorDialog.classList.add("ativo");
